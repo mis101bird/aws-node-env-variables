@@ -2,11 +2,11 @@
 
 module.exports.createUser = (event, context, callback) => {
   // logs `4096`
-  console.log('PASSWORD_ITERATIONS: ', process.env.PASSWORD_ITERATIONS);
+  console.log('NEW PASSWORD_ITERATIONS: ', process.env.PASSWORD_ITERATIONS);
   // logs `256`
-  console.log('PASSWORD_DERIVED_KEY_LENGTH: ', process.env.PASSWORD_DERIVED_KEY_LENGTH);
+  console.log('NEW PASSWORD_DERIVED_KEY_LENGTH: ', process.env.PASSWORD_DERIVED_KEY_LENGTH);
   // logs `KEYEXAMPLE1234`
-  console.log('EMAIL_SERVICE_API_KEY: ', process.env.EMAIL_SERVICE_API_KEY);
+  console.log('NEW EMAIL_SERVICE_API_KEY: ', process.env.EMAIL_SERVICE_API_KEY);
 
   // In this case could use the env vars to generate a secure password hash.
   // const passwordHash = PBKDF2(
